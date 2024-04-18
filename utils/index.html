@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile chữ</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center; /* Căn giữa theo chiều ngang */
+        align-items: center; /* Dịch xuống dưới ở giữa */
+        background-color: #000; /* Màu nền đen */
+    }
+
+    .container {
+        display: flex;
+        color: transparent; /* Màu chữ trong suốt */
+        font-size: 2em; /* Kích thước chữ */
+        animation: ledText 2s infinite; /* Áp dụng animation */
+    }
+
+    .container span {
+        margin: 0 0.1em; /* Khoảng cách giữa các ký tự */
+    }
+
+    @keyframes ledText {
+        0% { color: #00ff00; } /* Màu xanh */
+        25% { color: #ff0000; } /* Màu đỏ */
+        50% { color: #800080; } /* Màu tím */
+        75% { color: #ffd700; } /* Màu vàng */
+        100% { color: #ff69b4; } /* Màu hồng */
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <span>TNT</span>
+    <span>X</span>
+    <span>TRICK</span>
+</div>
+</body>
+</html>
